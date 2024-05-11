@@ -1,0 +1,27 @@
+.fovus-app{
+  padding: 10px;
+}
+.container{
+  padding:10px 0;
+}
+.container > span{
+  padding-right: 6px;
+}
+input[type=submit]{
+  padding: 0 4px;
+  background-color: black;
+  border: 1px solid #888888;
+  border-radius: 4px;
+}
+input[type=file]::file-selector-button{
+  padding: 0 4px;
+  background-color: black;
+  border: 1px solid #888888;
+  border-radius: 4px; 
+  color:white;
+}
+input[type=text]{
+  background-color: black;
+  border: 1px solid #888888;
+  border-radius: 4px;
+}
