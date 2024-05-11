@@ -15,6 +15,43 @@ This is a simple React application that allows users to upload a file and input 
 - `dbPut.ts`: This module contains the `dbInsert` function, which inserts an item into a DynamoDB table.
 - `vmFunc.ts`: This module contains the `createEC2Instance` and `terminateEC2Instance` functions, which create and terminate an EC2 instance, respectively.
 
+## Setup
+
+To set up the application, follow these steps:
+
+1. Clone the repository to your local machine:
+    ```
+    git clone https://github.com/your-username/your-repo.git
+    ```
+
+2. Navigate to the project directory:
+    ```
+    cd aws-react
+    ```
+
+3. Install the dependencies using npm:
+    ```
+    npm install
+    ```
+
+4. Configure your AWS credentials by creating a `~/.aws/credentials` file with the following content:
+    ```
+    [default]
+    aws_access_key_id = YOUR_ACCESS_KEY_ID
+    aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+    ```
+
+5. Update the AWS resource names in the code:
+    - Replace `fovus-gvs` with your S3 bucket name in `uploadFile.ts`.
+    - Replace `fovus-files` with your DynamoDB table name in `dbPut.ts`.
+
+6. Start the application:
+    ```
+    npm start
+    ```
+
+7. Open your browser and navigate to `localhost:3000` to use the application.
+
 ## Usage
 
 To use the application, simply run `npm start` in the terminal. This will start the application on `localhost:3000`.
@@ -30,5 +67,3 @@ The application is configured to use the following AWS resources:
 - S3 bucket: `fovus-gvs`
 - DynamoDB table: `fovus-files`
 - EC2 instance: The application creates a new EC2 instance each time the form is submitted and then terminates the instance.
-
-If you want to use different AWS resources, you will need to modify the corresponding functions in `uploadFile.ts`, `dbPut.ts`, and `vmFunc.ts`.
