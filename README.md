@@ -21,12 +21,13 @@ To set up the application, follow these steps:
 
 1. Clone the repository to your local machine:
     ```
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/GvsSriRam/aws-react-fovus.git
     ```
 
 2. Navigate to the project directory:
     ```
     cd aws-react
+    cd frontend
     ```
 
 3. Install the dependencies using npm:
@@ -47,7 +48,7 @@ To set up the application, follow these steps:
 
 6. Start the application:
     ```
-    npm start
+    npm run start
     ```
 
 7. Open your browser and navigate to `localhost:3000` to use the application.
